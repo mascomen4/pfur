@@ -17,9 +17,9 @@ replace fio with 'Lok', gender with .f., dr with ctod('06-09-1996'), stip with 2
 append blank
 replace fio with 'Zok', gender with .f., dr with ctod('06-09-1995'), stip with 1400
 append blank
-replace fio with 'Sok', gender with .t., dr with ctod('05-10-1994'), stip with 900
+replace fio with 'Sok', gender with .t., dr with ctod('06-09-1994'), stip with 900
 append blank
-replace fio with 'Jok', gender with .t., dr with ctod('06-10-1999'), stip with 2000
+replace fio with 'Jok', gender with .t., dr with ctod('06-09-1999'), stip with 2000
 append blank
 replace fio with 'Kok', gender with .f., dr with ctod('06-09-1998'), stip with 900
 append blank
