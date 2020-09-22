@@ -51,7 +51,7 @@ begin
   SetLength(x, nPoints+1);
   SetLength(y, nPoints+1);
   for i := 0 to nPoints do
-   begin
+    begin
     // Вот здесь изменения!
       x[i] := a+(i-1)*(b-a)/(nPoints-1);
       //y[i] := sin(x[i]);
@@ -188,7 +188,7 @@ begin
           WriteLN(SaveFile, 'Число точек ', #9, NPoints:2, #9);
           for i:=0 to NPoints-1 do
           begin
-            WriteLN(SaveFile, x[i]:12:5, #9, y[i]:12:5, #9, z[i]:12:5, #9);
+            WriteLN(SaveFile, x[i]:12:5, #9, y[i]:12:5, #9);
           end;
         end
         else
@@ -255,7 +255,7 @@ procedure TForm1.FormCreate(Sender: TObject);
 var
   i : integer;
 begin
-  nPoints := 20;
+  nPoints := 19;
   a := -1;
   b := -0.05; // интервал для перерисовки графика
   SetLength(x, nPoints+1);
@@ -263,7 +263,7 @@ begin
   SetLength(z, nPoints + 1);
   for i := 0 to nPoints do
     begin
-      x[i] := a+(i)*(b-a)/(nPoints-1);
+      x[i] := a+(i)*(b-a)/(nPoints);
       // И тут изменения!
       //y[i] := sin(x[i]);
       //z[i] := cos(x[i]);

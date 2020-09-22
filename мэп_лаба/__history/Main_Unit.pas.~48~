@@ -188,7 +188,7 @@ begin
           WriteLN(SaveFile, 'Число точек ', #9, NPoints:2, #9);
           for i:=0 to NPoints-1 do
           begin
-            WriteLN(SaveFile, x[i]:12:5, #9, y[i]:12:5, #9, z[i]:12:5, #9);
+            WriteLN(SaveFile, x[i]:12:5, #9, y[i]:12:5, #9);
           end;
         end
         else
